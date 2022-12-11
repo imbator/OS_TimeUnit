@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while [ true ]
+do
+	if read line; then
+        	encoder_line=$line;
+	else
+		#sleep 2.5
+		
+sudo ./display_text/lcd $encoder_line
+	fi
+done
+
